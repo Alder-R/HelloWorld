@@ -10,7 +10,7 @@ public class Main {
     }
 
     static void inputs() {
-        String codes[] = {"별1", "별2", "구구단", "맥주"};
+        String codes[] = {"별1","별2","구구단","맥주","사칙연산"};
         System.out.println("￣￣￣￣￣￣￣￣￣￣");
         System.out.println("코드 목록: ");
         for (int i = 0; i < codes.length; i++) {
@@ -27,6 +27,7 @@ public class Main {
             case "별2": ForApp.stars2(); break;
             case "구구단": ForApp.gugu(); break;
             case "맥주": BottleOfBeer.beers(); break;
+            case "사칙연산": SimpleCalculator.Calculator(); break;
             default: System.out.println("입력 오류, 재입력 바람");
         }
     }
