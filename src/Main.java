@@ -10,7 +10,7 @@ public class Main {
     }
 
     static void inputs() {
-        String codes[] = {"별1(사각형)","별2(계단)","구구단","(99병의)맥주","사칙연산","(비트)시프트","(비트)논리연산"};
+        String codes[] = {"별1(사각형)","별2(계단)","구구단","(99병의)맥주","사칙연산","(비트)시프트","(비트)논리연산","현재시간"};
         System.out.println("￣￣￣￣￣￣￣￣￣￣");
         System.out.println("코드 목록: ");
         for (int i = 0; i < codes.length; i++) {
@@ -30,6 +30,7 @@ public class Main {
             case "사칙연산": SimpleCalculator.Calculator(); break;
             case "시프트": BitOperator.shift(); break;
             case "논리연산": BitOperator.logic(); break;
+            case "현재시간": DateTime.currents(); break;
             default: System.out.println("입력 오류, 재입력 바람");
         }
     }
