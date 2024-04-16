@@ -11,7 +11,7 @@ public class Main {
 
     static void inputs() {
         String codes[] = {"별1(사각형)","별2(계단)","구구단","(99병의)맥주","사칙연산","(비트)시프트","(비트)논리연산","현재시간",
-                "Hello"};
+                "Hello","대문자화","소문자화"};
         System.out.println("￣￣￣￣￣￣￣￣￣￣");
         System.out.println("코드 목록: ");
         for (int i = 0; i < codes.length; i++) {
@@ -33,6 +33,8 @@ public class Main {
             case "논리연산": BitOperator.logic(); break;
             case "현재시간": DateTime.currents(); break;
             case "Hello": HelloWorld.hello(); break;
+            case "대문자화": HelloWorld.upper(); break;
+            case "소문자화": HelloWorld.lower(); break;
             default: System.out.println("입력 오류, 재입력 바람");
         }
     }
